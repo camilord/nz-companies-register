@@ -16,7 +16,8 @@ use camilord\NZCompaniesRegister\Utils\Qurl;
 
 class NZCompaniesRegister
 {
-    private $_url = "https://www.business.govt.nz/companies/app/ui/pages/search";
+    //private $_url = "https://www.business.govt.nz/companies/app/ui/pages/search";
+    private $_url = "https://app.companiesoffice.govt.nz/companies/app/ui/pages/search";
     private $_final_url;
 
     public function search($keywords) {

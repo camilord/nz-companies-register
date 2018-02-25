@@ -19,6 +19,6 @@ function __autoload($class_name) {
 use camilord\NZCompaniesRegister\NZCompaniesRegister;
 
 $obj = new NZCompaniesRegister();
-$result = $obj->search('bluehorn');
+$result = $obj->search('blue horn');
 
 print_r($result);

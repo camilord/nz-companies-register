@@ -20,6 +20,10 @@ class NZCompaniesRegister
     private $_url = "https://app.companiesoffice.govt.nz/companies/app/ui/pages/search";
     private $_final_url;
 
+    /**
+     * @param $keywords
+     * @return array
+     */
     public function search($keywords) {
 
         $this->_final_url = $this->_url . '?q='.urlencode($keywords).'&type=entities';
@@ -29,15 +33,26 @@ class NZCompaniesRegister
 
     }
 
-    public function test($data) {
-        return $this->parse_raw_search_result($data);
-    }
-
+    /**
+     * @return mixed
+     */
     public function get_url() {
         return $this->_final_url;
     }
 
+    /**
+     * @param $data
+     * @return array
+     */
     private function parse_raw_search_result($data) {
+
+        /**
+         * if no data or response from the host,
+         * or the server is down as MBIE have a crappy service of this things...
+         */
+        if ($data === false) {
+            return [];
+        }
 
         $processed_data = array();
 
@@ -80,6 +95,10 @@ class NZCompaniesRegister
         return $processed_data;
     }
 
+    /**
+     * @param $data
+     * @return array
+     */
     private function parse_with_history_names($data) {
         $tmp = explode('<div class="registryNote">', $data);
         $company_main_name = strip_tags($tmp[0]);

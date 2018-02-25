@@ -15,7 +15,14 @@ namespace camilord\NZCompaniesRegister\Utils;
 
 class Qurl {
 
-    public static function exec($url, $postdata = null, $str = false, $cookfile = null) {
+    /**
+     * @param $url
+     * @param array $postdata
+     * @param bool $str
+     * @param null $cookfile
+     * @return mixed
+     */
+    public static function post($url, $postdata = null, $str = false, $cookfile = null) {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($curl, CURLOPT_HEADER, 0);
@@ -45,6 +52,12 @@ class Qurl {
         }
     }
 
+    /**
+     * @param $url
+     * @param bool $str
+     * @param null $cookfile
+     * @return mixed
+     */
     public static function get($url, $str = false, $cookfile = null) {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);

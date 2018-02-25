@@ -2,7 +2,7 @@
   "name": "camilord/nz-companies-register",
   "version": "1.0.1",
   "homepage": "https://github.com/camilord/NZ-Companies-Register",
-  "description": "Extended FPDF include FPDF, FPDF Protection, HTML2PDF, etc",
+  "description": "This helper package/component is useful when you have a form needs with real and valid NZ company names. I created this because MBIE don't have a working API yet. So this component will use their web search function and scrape the search result data into reusable output, ARRAY. Hope this will save your time and effort writing the same thing.",
   "type": "library",
   "keywords": ["nz companies search", "nz companies register", "nz companies search API", "nz companies register API", "nz business search", "nz business search API"],
   "license": "MIT",

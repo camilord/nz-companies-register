@@ -1,7 +1,7 @@
 NZ Companies Register API
 =========================
 
-This package/component is useful when you have a form needs with real and valid NZ company names.
+This helper package/component is useful when you have a form needs with real and valid NZ company names. I created this because MBIE don't have a working API yet. So this component will use their web search function and scrape the search result data into reusable output, ARRAY. Hope this will save your time and effort writing the same thing. :)
 
 Usage:
 

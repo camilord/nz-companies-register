@@ -1,6 +1,6 @@
 {
   "name": "camilord/nz-companies-register",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/camilord/NZ-Companies-Register",
   "description": "Extended FPDF include FPDF, FPDF Protection, HTML2PDF, etc",
   "type": "library",

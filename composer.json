@@ -1,0 +1,26 @@
+{
+  "name": "camilord/nz-companies-register",
+  "version": "1.0.0",
+  "homepage": "https://github.com/camilord/NZ-Companies-Register",
+  "description": "Extended FPDF include FPDF, FPDF Protection, HTML2PDF, etc",
+  "type": "library",
+  "keywords": ["nz companies search", "nz companies register", "nz companies search API", "nz companies register API", "nz business search", "nz business search API"],
+  "license": "MIT",
+  "url": "https://github.com/camilord/nz-companies-register",
+  "authors": [
+    {
+      "name": "Camilo Lozano III",
+      "email": "me@camilord.com",
+      "homepage": "https://www.camilord.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "camilord\\NZCompaniesRegister\\": "./src"
+    },
+    "classmap": [
+      "src/Utils/Qurl.php",
+      "src/NZCompaniesRegister.php"
+    ]
+  }
+}

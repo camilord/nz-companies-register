@@ -12,7 +12,7 @@
 
 namespace camilord\NZCompaniesRegister;
 
-use NZCompaniesRegister\Utils\Qurl;
+use camilord\NZCompaniesRegister\Utils\Qurl;
 
 class NZCompaniesRegister
 {

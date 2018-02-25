@@ -10,7 +10,7 @@
  * ----------------------------------------------------
  */
 
-namespace NZCompaniesRegister\Utils;
+namespace camilord\NZCompaniesRegister\Utils;
 
 
 class Qurl {
